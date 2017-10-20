@@ -8,7 +8,7 @@ h1 {
   width: 16em;
   color: white;
   opacity: 0;
-  animation: text 1s linear forwards;
+  animation: opacity 1s linear forwards;
 }
 
 #narwhal-body {
@@ -25,14 +25,13 @@ h1 {
 
 }
 
-@keyframes text {
+@keyframes opacity {
 
   100% {
     opacity: 1;
   }
 
 }
-
 
 #rainbow-red {
   stroke-dasharray: 1244px; /* The length of the stroke */
@@ -74,4 +73,9 @@ h1 {
   stroke-dasharray: 1918px; /* The length of the stroke */
   stroke-dashoffset: 1918px; /* The length of the stroke */
   animation: offset 1s .5s linear forwards;
+}
+
+#narwhal-eye {
+  opacity: 0;
+  animation: opacity .3s .7s linear forwards;
 }
